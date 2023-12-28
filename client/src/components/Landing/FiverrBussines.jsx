@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { BsFillPatchCheckFill } from "react-icons/bs";
-import FiverLogo from "./FiverLogo";
+import FiverLogo from "../FiverLogo";
 
 function FiverrBussines() {
   return (
@@ -16,7 +16,9 @@ function FiverrBussines() {
         </div>
         <ul className="flex flex-col gap-5 w-3/4 mt-8">
           <li className="flex items-center gap-3">
-            <BsFillPatchCheckFill color="#b2abff" size={25} />
+            <div>
+              <BsFillPatchCheckFill color="#b2abff" size={25} />
+            </div>
             <div>
               <div className="font-bold ">Firver Pro</div>
               <div>
@@ -26,14 +28,18 @@ function FiverrBussines() {
             </div>
           </li>
           <li className="flex items-center gap-3">
-            <BsFillPatchCheckFill color="#b2abff" size={25} />
+            <div>
+              <BsFillPatchCheckFill color="#b2abff" size={25} />
+            </div>
             <div>
               <div className="font-bold ">Fiverr Certified</div>
               <div>Build your own branded marketplace of certified experts</div>
             </div>
           </li>
           <li className="flex items-center gap-3">
-            <BsFillPatchCheckFill color="#b2abff" size={25} />
+            <div>
+              <BsFillPatchCheckFill color="#b2abff" size={25} />
+            </div>
             <div>
               <div className="font-bold ">Fiverr Enterprise</div>
               <div>

@@ -1,10 +1,10 @@
-import Companies from "@/components/Companies";
-import Everything from "@/components/Everything";
-import FiverrBussines from "@/components/FiverrBussines";
-import HeroBanner from "@/components/HeroBanner";
-import JoinFiverr from "@/components/JoinFiverr";
-import PopularServices from "@/components/PopularServices";
-import Services from "@/components/Services";
+import Companies from "@/components/Landing/Companies";
+import Everything from "@/components/Landing/Everything";
+import FiverrBussines from "@/components/Landing/FiverrBussines";
+import HeroBanner from "@/components/Landing/HeroBanner";
+import JoinFiverr from "@/components/Landing/JoinFiverr";
+import PopularServices from "@/components/Landing/PopularServices";
+import Services from "@/components/Landing/Services";
 import React from "react";
 
 function Index() {
