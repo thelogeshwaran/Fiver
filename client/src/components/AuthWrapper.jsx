@@ -1,10 +1,11 @@
 import { useStateProvider } from "@/context/StateContext";
 import { reducerCases } from "@/context/constants";
-import React from "react";
+import React, { useState } from "react";
 
 function AuthWrapper() {
   const [{ showLoginModal, showSignupModal }, dispatch] = useStateProvider();
   const [values, setValues] = useState({ email: "", password: "" });
+  console.log("values", values);
 
   const handleChange = (e) => {
     setValues({ ...values, [e?.target?.name]: e?.target?.value });
@@ -12,7 +13,7 @@ function AuthWrapper() {
   return (
     <div className="fixed z-40 top-0">
       <div className="h-[100vh] w-[100vw] backdrop-filter-md fixed top-0"></div>
-      <div className="h-[100vh] w-[100vw] flex flex-col justify-center items-center">
+      <div className="h-[100vh] w-[100vw] flex flex-col justify-center items-center backdrop-blur-md">
         <div className="fixed z-[50] h-max w-max bg-white flex flex-col justify-center items-center ">
           <div className="flex flex-col justify-center items-center p-8 gap-7 ">
             {showLoginModal ? (

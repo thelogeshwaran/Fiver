@@ -18,7 +18,6 @@ function HeroBanner() {
     );
     return () => clearInterval(interval);
   }, [image]);
-  console.log(image);
   return (
     <div className="h-[690px] relative bg-cover">
       <div className="absolute top-0 right-0 w-[110vw] h-full transition-opacity z-0">
